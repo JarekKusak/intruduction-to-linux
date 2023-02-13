@@ -36,9 +36,7 @@ def main():
                             print(s)
                             semaf = False
                             break
-                
-
-        else:
+        if semaf:
             print(os.path.basename(os.getcwd()))
     except:
         print(os.path.basename(os.getcwd()))
