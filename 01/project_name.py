@@ -16,11 +16,12 @@ def main():
                 pom = True
             if pom:
                 with open(nazev, mode="r", encoding="utf-8") as f:
-                    if f.readline(1) == "":
+                    # zkopírováno ze stack overflow
+                    # link: https://stackoverflow.com/questions/17747330/correct-way-to-check-for-empty-or-missing-file-in-python
+                    if os.stat(nazev).st_size == 0: 
                         continue
                     line = f.readline()
                     while(line != ""): # čte po řádcích, dokud neskončí soubor
-                        
                         if line[0] == "\n":
                             line = f.readline()
                             continue
