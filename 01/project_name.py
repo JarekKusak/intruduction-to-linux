@@ -3,7 +3,7 @@ import os
 #!/usr/bin/env python3
 
 def main():
-    nazvy = ["readme.md", "README", "readme"]
+    nazvy = ["README.md", "readme.md", "README", "readme"]
     pom = False
     nazev = None
     try:
