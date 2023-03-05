@@ -13,7 +13,10 @@ def date_to_day(file):
         if len(datum) != 3: # if it doesn't have the format -> not a string
             print(line[:-1])
             continue
-        dt = datetime.datetime(int(datum[0]), int(datum[1]), int(datum[2])) # convert strings to datetime
+        try:
+            dt = datetime.datetime(int(datum[0]), int(datum[1]), int(datum[2])) # convert strings to datetime
+        except:
+            continue
         wd = dt.weekday() # n. of weekday
         if len(newstring) > 1: # if rest of the sentence exists
             line = days[wd]+" "+ newstring[1][:-1] # print day + rest of the sentence (withou \n - was messing the output)
@@ -33,7 +36,7 @@ def main():
                 with open(filename, "r") as file:
                     date_to_day(file)
             except IOError as e:
-                print(f"Error reading file {filename}: {e}", file=sys.stderr)
+                print(f"{filename}: error reading file")
                 exit_code = 1           
     sys.exit(exit_code)
 
