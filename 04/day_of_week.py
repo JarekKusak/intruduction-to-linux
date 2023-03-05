@@ -37,7 +37,7 @@ def main():
                 with open(filename, "r") as file:
                     date_to_day(file)
             except IOError as e:
-                #print(f"{filename}: error reading file")
+                print(f"{filename}: error reading file")
                 exit_code = 1           
     sys.exit(exit_code)
 
