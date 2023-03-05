@@ -2,4 +2,4 @@
 
 set -eou pipefail
 
-tr '|' '0' | tr ' ' '+' | bc
+tr -s ' ' | cut -d ' ' -f 2- | tr '|' '0' | tr ' ' '+' | bc
