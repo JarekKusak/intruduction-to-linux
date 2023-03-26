@@ -4,6 +4,9 @@ import sys
 
 def main():
     values = list(map(int, sys.argv[1:]))
+    if (values == []):
+        print(0)
+        exit(0)
     avg = sum(values) / len(values)
     print(avg)
 
