@@ -2,7 +2,7 @@
 
 set -ueo pipefail
 
-printThis(){
+printThisDirectory(){
     CURR_DIR_FILES=$(ls $PWD)
     for file in $CURR_DIR_FILES 
     do
@@ -18,7 +18,7 @@ printThis(){
 
 # zpracování options:
 if [ $# -eq 0 ]; then
-    printThis
+    printThisDirectory
 fi
 for file in "$@"
     do
@@ -35,6 +35,3 @@ for file in "$@"
             echo $file "<special>"
         fi
     done | column --table --table-noheadings --table-columns FILENAME,SIZE --table-right SIZE
-
-
-shift $((OPTIND -1)) # posouvá pole o několik options a zbytek zahodí (ponechá poziční argumenty)
