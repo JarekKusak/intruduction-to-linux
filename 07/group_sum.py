@@ -10,7 +10,11 @@ def splitter(line, field_separator, key_column, value_column):
 def sum_file(inp, results, line_splitter):
     for line in inp:
         (key, number) = line_splitter(line)
-        results[key] = results.get(key, 0) + int(number)
+        try:
+            results[key] = results.get(key, 0) + int(number)
+        except ValueError:
+            line_clean = line.rstrip('\n')
+            print(f"Warning: skipping invalid line '{line_clean}'.", file=sys.stderr)
 
 def main():
     args = argparse.ArgumentParser(description='Group sum')
@@ -55,17 +59,27 @@ def main():
 
     line_splitter = lambda line: splitter(line, config.input_field_separator, config.key_column, config.value_column)
 
+    exit_code = 0
     sums = {}
     if not config.sources:
         sum_file(sys.stdin, sums, line_splitter)
     else:
         for filename in config.sources:
-            with open(filename, "r") as inp:
-                sum_file(inp, sums, line_splitter)
+           with open(filename, "r") as inp:
+               sum_file(inp, sums, line_splitter)
+           try:
+               with open(filename, "r") as inp:
+                   sum_file(inp, sums, line_splitter)
+           except IOError as e:
+               print(f"Error: unable to read from {filename} ({e}).", file=sys.stderr)
+               exit_code = 1
+    for key, value in sums.items():
+            print(f"{key}{config.output_field_separator}{value}")
 
     for key, value in sums.items():
         print(f"{key}{config.output_field_separator}{value}")
 
+    sys.exit(exit_code)
 if __name__ == "__main__":
     main()
 
