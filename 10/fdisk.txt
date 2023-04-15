@@ -1,0 +1,120 @@
+Disk /dev/loop0: 4 KiB, 4096 bytes, 8 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 63,29 MiB, 66359296 bytes, 129608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 63,32 MiB, 66392064 bytes, 129672 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 72,98 MiB, 76521472 bytes, 149456 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 241,61 MiB, 253349888 bytes, 494824 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 239,88 MiB, 251527168 bytes, 491264 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop6: 346,33 MiB, 363151360 bytes, 709280 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop7: 349,69 MiB, 366673920 bytes, 716160 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/nvme0n1: 476,94 GiB, 512110190592 bytes, 1000215216 sectors
+Disk model: WDC PC SN530 SDBPMPZ-512G-1001          
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: AAC192C1-3E22-47BF-80EB-4247F6AED412
+
+Device             Start        End   Sectors   Size Type
+/dev/nvme0n1p1      2048     534527    532480   260M EFI System
+/dev/nvme0n1p2    534528     567295     32768    16M Microsoft reserved
+/dev/nvme0n1p3    567296  586516479 585949184 279,4G Microsoft basic data
+/dev/nvme0n1p4 996118528 1000214527   4096000     2G Windows recovery environment
+/dev/nvme0n1p5 586516480  752531455 166014976  79,2G Linux filesystem
+/dev/nvme0n1p6 752531456  967374847 214843392 102,4G Linux filesystem
+/dev/nvme0n1p7 967374848  996118527  28743680  13,7G Linux swap
+
+Partition table entries are not in disk order.
+
+
+Disk /dev/loop8: 460,39 MiB, 482750464 bytes, 942872 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop9: 460,27 MiB, 482631680 bytes, 942640 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop10: 91,69 MiB, 96141312 bytes, 187776 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop11: 45,93 MiB, 48160768 bytes, 94064 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop12: 49,84 MiB, 52260864 bytes, 102072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop13: 49,84 MiB, 52260864 bytes, 102072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop14: 304 KiB, 311296 bytes, 608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop15: 428 KiB, 438272 bytes, 856 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop16: 72,99 MiB, 76537856 bytes, 149488 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
