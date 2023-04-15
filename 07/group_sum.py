@@ -10,7 +10,11 @@ def splitter(line, field_separator, key_column, value_column):
 def sum_file(inp, results, line_splitter):
     for line in inp:
         (key, number) = line_splitter(line)
-        results[key] = results.get(key, 0) + int(number)
+        try:
+            results[key] = results.get(key, 0) + int(number)
+        except ValueError:
+            line_clean = line.rstrip('\n')
+            print(f"Warning: skipping invalid line '{line_clean}'.", file=sys.stderr)
 
 def main():
     args = argparse.ArgumentParser(description='Group sum')
