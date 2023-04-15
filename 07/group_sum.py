@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import argparse
 import sys
 
@@ -80,6 +79,7 @@ def main():
         print(f"{key}{config.output_field_separator}{value}")
 
     sys.exit(exit_code)
+    
 if __name__ == "__main__":
     main()
 
