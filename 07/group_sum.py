@@ -54,18 +54,24 @@ def main():
             config.output_field_separator = '\t'
 
     line_splitter = lambda line: splitter(line, config.input_field_separator, config.key_column, config.value_column)
-
+    exit_code = 0
     sums = {}
     if not config.sources:
         sum_file(sys.stdin, sums, line_splitter)
     else:
         for filename in config.sources:
-            with open(filename, "r") as inp:
-                sum_file(inp, sums, line_splitter)
+            try:
+                with open(filename, "r") as inp:
+                    sum_file(inp, sums, line_splitter)
+            except IOError as e:
+                print(f"Error: unable to read from {filename} ({e}).", file=sys.stderr)
+                exit_code = 1
 
     for key, value in sums.items():
-        print(f"{key}{config.output_field_separator}{value}")
+         print(f"{key}{config.output_field_separator}{value}")
+
+    sys.exit(exit_code)
 
 if __name__ == "__main__":
-    main()
+     main()
 
