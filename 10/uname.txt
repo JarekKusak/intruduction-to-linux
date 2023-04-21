@@ -1,0 +1,1 @@
+{:sysname=>"Linux", :nodename=>"jarekusak-ThinkPad-E15-Gen-3", :release=>"5.19.0-35-generic", :version=>"#36~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb 17 15:17:25 UTC 2", :machine=>"x86_64"}
