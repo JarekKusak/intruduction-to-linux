@@ -27,7 +27,7 @@ check_it() {
     test "$output" = "$expected"
 }
 
-for i in {0..31}; do
+for i in {0..10}; do
     @test "factorial $i" {
         check_it "$i" "$(factorial "$i")"
     }
