@@ -1,0 +1,4 @@
+gitdb==4.0.10
+GitPython==3.1.31
+smmap==5.0.0
+UNKNOWN @ file:///home/jarekusak/GitLab/student-kusakja/11/project-name
